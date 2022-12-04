@@ -14,12 +14,11 @@ To comment out a larger chunk of code, surround the code with slashes and asteri
 
 ### Reserve Words
 C++ has a little less than 100 reserved words (95 to be exact). Most should be familiar to you or self explainitory. They are the following.
-asm | auto | break | case | catch | char | class | const | continue | default | delete
----|---|---|---|---|---|---|---|---|---|---
-do | double | else | enum |  float | for | friend | goto | if | inline | int | long
----|---|---|---|---|---|---|---|---|---|---
+-R-|-E-|-S-|-E-|-R-|-V-|-E-|-W-|-O-|-R-|-D-|-S-
+---|---|---|---|---|---|---|---|---|---|---|---
+asm | auto | break | case | catch | char | class | const | continue | default | delete | do 
+double | else | enum | extern | float | for | friend | goto | if | inline | int | long
 new | operator | private | protected | public | register | return | short | signed | sizeof | static | struct
----|---|---|---|---|---|---|---|---|---|---
 switch | template | this | throw | try | typedef | union | unsigned | virtual | void | violate | while
 
 ### Variable Naming Rules
