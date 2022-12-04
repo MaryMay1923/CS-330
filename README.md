@@ -14,7 +14,7 @@ To comment out a larger chunk of code, surround the code with slashes and asteri
 
 ### Reserve Words
 C++ has a little less than 100 reserved words (95 to be exact). Most should be familiar to you or self explainitory. They are the following.
--R-|-E-|-S-|-E-|-R-|-V-|-E-|-W-|-O-|-R-|-D-|-S-
+R|E|S|E|R|V|E|W|O|R|D|S
 ---|---|---|---|---|---|---|---|---|---|---|---
 asm | auto | break | case | catch | char | class | const | continue | default | delete | do 
 double | else | enum | extern | float | for | friend | goto | if | inline | int | long
@@ -23,3 +23,4 @@ switch | template | this | throw | try | typedef | union | unsigned | virtual | 
 
 ### Variable Naming Rules
 Obviously you cannot use any of the reserved words as variables in C++. Variable names must start with either a lowercase letter or an underscore, and they cannot include whitespaces or special characters (#!% ect) anywhere within the name. It’s also good to keep in mind that C++ is case sensitive, so the variable names countEggs and counteggs are seen as unique variable names.
+C++ being a strong, static, explicitly typed language means that you will have to declair what type of variable you are creating. Before naming your variable, you must type whichever is accurate: char, double, float, int, long, short, 
