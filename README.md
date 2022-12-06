@@ -43,7 +43,7 @@ C++ uses short-circuiting evaluation when “&&” (and) or “| |” (or) opera
 C++ uses switches, and they are set up in a very similar way to other languages. You may use "break"s to escape the switch or "continue"s to keep evaluating the conditionals.
 
 ## Loops
-C++ has four different types of loops: while, do-while, for, and for-each. Though they are similar, their set up and uses are different and useful in unique applications.
+C++ has four different types of loops: while, do-while, for, and for-each. Though they are similar, their set up and uses are different and useful in unique applications. Other than the fact that loops are repeated, the code block within a loop is no different than that in a function.
 
 ### While Loops
 While loops repeat a block of code as long as the conditional statement within the parenthesis remains true. If the conditional statement is ever false, including if it is false before the start of the loop, it will not run. It is important that something within the while loop changes that conditional so that the loop does not go on forever.
@@ -60,3 +60,11 @@ For loops are good for applications in which you know exactly how many times a b
 ### For-Each Loops
 This is the correct function to use when itterating through lists, arrays, or other list-like structures. Although the regular for-loop can do this, for-each loops provide a more susinct syntax. If you do not know the variable type that will be itterated within the loop, then you can use the key word "auto" when declairing that variable type. C++ should be able to figure out the rest.
 *INSERT PICTURE HERE*
+
+### Functions
+To declare a function, you must first state what you want your function to return. This can be either integer (int), double, boolean (bool), or nothing (void). Then state the name of the function and follow it by an open and closed parenthesis, leave it empty if the function doesn’t need to take in any values, or type out the parameters. There can be any amount of parameters and they do not have to all be the same datatype. Then the rest of the code is placed in between two curly brackets. 
+Functions in C++ can be called and declared in almost any order so long as the function is declared in or before the main function, and that function is called in main. There are no recursive functions in main either.
+C++ cannot explicitly return more than one variable in a function. However, if you return an array, list, or object, you can store multiple values in them and achieve essentially the same thing.
+Parameters of a function are pass-by-reference, but augment are pass by value. Any augments, parameters, and variables are stored on a stack by default. If you want to save things in a heap, you must explicitly code that. 
+## Side Effects
+Side effects are possible in C++. Oftentimes these communication errors are caused by accidentally modifying a global variable. In general, it’s good practice to reduce how many global variables you have in your code anyways. In general, if a side effect is happening, it’s always good practice to use a debugger.
