@@ -28,6 +28,9 @@ C++ being a strong, static, explicitly typed language means that you will have t
 ### Operators
 C++ has a serise of basic operators, similar to other languages, that consist of +, -, *, /, %, ++, --, ?, <, >, <=, >=, ==. All of these operators work for integers and floats. Strings will work with + to add two strings together, as well as with the comparison operators (<, >, <=, >=, ==) to compare the length of two strings. == Works for boolean data types. Mixed type arithmetic is allowed to a certain extent. Floats and ints can interact, but they will be saved as either a float or int depending on the type declaration of the variable the value is saved in. However, ints and strings cannot interact. 
 
+## Scope
+Before going into the rest, we need to establish the scope of variables in C++. Variables declaired outside a code block (code that is surrounded by curly brackets) can be accessed within the code block. Often times they will need to be referenced in the parameters of a code block though. However, a variable declaied within a code block is local to that block and cannot be referenced outside of it unless it is returned in some fashion. Now that that has been established, we can more on to the next things.
+
 ## If/Else, Switch, and Logical Operators
 C++, like most languages, use boolean statements to access if/else, switch, and logical operator statements. C++ represents true as 1, and false as 0. This means if you print a true statement, it will print out "1".
 
@@ -65,6 +68,10 @@ This is the correct function to use when itterating through lists, arrays, or ot
 To declare a function, you must first state what you want your function to return. This can be either integer (int), double, boolean (bool), or nothing (void). Then state the name of the function and follow it by an open and closed parenthesis, leave it empty if the function doesn’t need to take in any values, or type out the parameters. There can be any amount of parameters and they do not have to all be the same datatype. Then the rest of the code is placed in between two curly brackets. 
 Functions in C++ can be called and declared in almost any order so long as the function is declared in or before the main function, and that function is called in main. There are no recursive functions in main either.
 C++ cannot explicitly return more than one variable in a function. However, if you return an array, list, or object, you can store multiple values in them and achieve essentially the same thing.
-Parameters of a function are pass-by-reference, but augment are pass by value. Any augments, parameters, and variables are stored on a stack by default. If you want to save things in a heap, you must explicitly code that. 
+Parameters of a function are pass-by-reference, but augment are pass by value. Any augments, parameters, and variables are stored on a stack by default. If you want to save things in a heap, you must explicitly code that.
+
 ### Side Effects
 Side effects are possible in C++. Oftentimes these communication errors are caused by accidentally modifying a global variable. In general, it’s good practice to reduce how many global variables you have in your code anyways. In general, if a side effect is happening, it’s always good practice to use a debugger.
+
+## Objects and Structures
+Since C++ is an object oriented program, objects are arguably the most important thing to learn about when it comes to this language. C++ supports both objects and structures. While there is no struct naming convention for either of these, it seems to be the internet's consensus that variables start with lowercase letters and other namable-items in C++ are a bit more open ended.
