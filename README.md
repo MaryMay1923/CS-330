@@ -57,19 +57,19 @@ C++ has four different types of loops: while, do-while, for, and for-each. Thoug
 
 ### While Loops
 While loops repeat a block of code as long as the conditional statement within the parenthesis remains true. If the conditional statement is ever false, including if it is false before the start of the loop, it will not run. It is important that something within the while loop changes that conditional so that the loop does not go on forever.
-*INSERT PICTURE HERE*
+https://github.com/MaryMay1923/CS-330/blob/0fa82fa425312777eef4f2a46e2bb19069110076/plp4.cpp#L4-L8
 
 ### Do-While Loops
 Though similar to while loops, a do-while loop will execute at least once regardless of if the conditional was true at the beginning or not.
-*INSERT PICTURE HERE*
+https://github.com/MaryMay1923/CS-330/blob/0fa82fa425312777eef4f2a46e2bb19069110076/plp4.cpp#L10-L13
 
 ### For Loops
 For loops are good for applications in which you know exactly how many times a block of code needs to repeat.
-*INSERT PICTURE HERE*
+https://github.com/MaryMay1923/CS-330/blob/0fa82fa425312777eef4f2a46e2bb19069110076/plp4.cpp#L15-L17
 
 ### For-Each Loops
 This is the correct function to use when itterating through lists, arrays, or other list-like structures. Although the regular for-loop can do this, for-each loops provide a more susinct syntax. If you do not know the variable type that will be itterated within the loop, then you can use the key word "auto" when declairing that variable type. C++ should be able to figure out the rest.
-*INSERT PICTURE HERE*
+https://github.com/MaryMay1923/CS-330/blob/0fa82fa425312777eef4f2a46e2bb19069110076/plp4.cpp#L19-L22
 
 ## Functions
 To declare a function, you must first state what you want your function to return. This can be either integer (int), double, boolean (bool), or nothing (void). Then state the name of the function and follow it by an open and closed parenthesis, leave it empty if the function doesn’t need to take in any values, or type out the parameters. There can be any amount of parameters and they do not have to all be the same datatype. Then the rest of the code is placed in between two curly brackets. 
