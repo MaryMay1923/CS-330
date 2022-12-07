@@ -8,9 +8,9 @@ C++ was created by Bjarne Stroustrup in 1979 after modifying an older coding lan
 ## Getting Started
 C++ can be difficult to work with on Windows computers. Although some recomend Visual Code Studios, my computer's been having a few glitches with it lately. I've found that the standard Visual Studio works best. It's fairly easy to download and, although it may seem daunting to manuever, there are plenty of resources online describing how to get Visual Studio to work for you. Since C++ is a Static language, we'll need to compile the code first before running it. The keyboard command to do this is CTRL + SHIFT + B. Then to actually run the code, you'll do the command ALT + F11 (or ALT + FN + F11 if you're working on a keyboard withere the F keys have multiple uses).
 To comment out a single line, begin the line with two slashes
-//like this
+https://github.com/MaryMay1923/CS-330/blob/main/plp1.cpp#L3
 To comment out a larger chunk of code, surround the code with slashes and asterick
-/* like this */
+https://github.com/MaryMay1923/CS-330/blob/main/plp1.cpp#L4-L5
 
 ### Reserve Words
 C++ has a little less than 100 reserved words (95 to be exact). Most should be familiar to you or self explainitory. The following are just some of the reserve words in C++:
