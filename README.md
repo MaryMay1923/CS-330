@@ -8,9 +8,9 @@ C++ was created by Bjarne Stroustrup in 1979 after modifying an older coding lan
 ## Getting Started
 C++ can be difficult to work with on Windows computers. Although some recomend Visual Code Studios, my computer's been having a few glitches with it lately. I've found that the standard Visual Studio works best. It's fairly easy to download and, although it may seem daunting to manuever, there are plenty of resources online describing how to get Visual Studio to work for you. Since C++ is a Static language, we'll need to compile the code first before running it. The keyboard command to do this is CTRL + SHIFT + B. Then to actually run the code, you'll do the command ALT + F11 (or ALT + FN + F11 if you're working on a keyboard withere the F keys have multiple uses).
 To comment out a single line, begin the line with two slashes
-https://github.com/MaryMay1923/CS-330/blob/main/plp1.cpp#L3
+https://github.com/MaryMay1923/CS-330/blob/9642e37de31444cc734ea06c3ea253b426c56c81/plp1.cpp#L3
 To comment out a larger chunk of code, surround the code with slashes and asterick
-https://github.com/MaryMay1923/CS-330/blob/main/plp1.cpp#L4-L5
+https://github.com/MaryMay1923/CS-330/blob/9642e37de31444cc734ea06c3ea253b426c56c81/plp1.cpp#L4-L5
 
 ### Reserve Words
 C++ has a little less than 100 reserved words (95 to be exact). Most should be familiar to you or self explainitory. The following are just some of the reserve words in C++:
@@ -24,12 +24,11 @@ switch | template | this | throw | try | typedef | union | unsigned | virtual | 
 ### Variable Naming Rules
 Obviously you cannot use any of the reserved words as variables in C++. Variable names must start with either a lowercase letter or an underscore, and they cannot include whitespaces or special characters (#!% ect) anywhere within the name. It’s also good to keep in mind that C++ is case sensitive, so the variable names countEggs and counteggs are seen as unique variable names.
 C++ being a strong, static, explicitly typed language means that you will have to declair what type of variable you are creating. Before naming your variable, you must type whichever is accurate: char, double, float, int, long, short, boolean, ect. Additionally, once a variable is declaired as one of these types, it cannot change it's type (unless it was origionally declaired as a mutable variable).
+https://github.com/MaryMay1923/CS-330/blob/dc46279c3372fe5632c6826244495a361ae10aa4/plp1.cpp#L10-L14
 
 ### Operators
-C++ has a serise of basic operators, similar to other languages, that consist of +, -, *, /, %, ++, --, ?, <, >, <=, >=, ==. All of these operators work for integers and floats. Strings will work with + to add two strings together, as well as with the comparison operators (<, >, <=, >=, ==) to compare the length of two strings. == Works for boolean data types. Mixed type arithmetic is allowed to a certain extent. Floats and ints can interact, but they will be saved as either a float or int depending on the type declaration of the variable the value is saved in. However, ints and strings cannot interact. 
-
-## Scope
-Before going into the rest, we need to establish the scope of variables in C++. Variables declaired outside a code block (code that is surrounded by curly brackets) can be accessed within the code block. Often times they will need to be referenced in the parameters of a code block though. However, a variable declaied within a code block is local to that block and cannot be referenced outside of it unless it is returned in some fashion. Now that that has been established, we can more on to the next things.
+C++ has a serise of basic operators, similar to other languages, that consist of +, -, \*, /, %, ++, --, ?, <, >, <=, >=, ==. All of these operators work for integers and floats. Strings will work with + to add two strings together, as well as with the comparison operators (<, >, <=, >=, ==) to compare the length of two strings. == Works for boolean data types. Mixed type arithmetic is allowed to a certain extent. Floats and ints can interact, but they will be saved as either a float or int depending on the type declaration of the variable the value is saved in. However, ints and strings cannot interact.
+https://github.com/MaryMay1923/CS-330/blob/dc46279c3372fe5632c6826244495a361ae10aa4/plp1.cpp#L16-L20
 
 ## If/Else, Switch, and Logical Operators
 C++, like most languages, use boolean statements to access if/else, switch, and logical operator statements. C++ represents true as 1, and false as 0. This means if you print a true statement, it will print out "1".
@@ -69,6 +68,9 @@ To declare a function, you must first state what you want your function to retur
 Functions in C++ can be called and declared in almost any order so long as the function is declared in or before the main function, and that function is called in main. There are no recursive functions in main either.
 C++ cannot explicitly return more than one variable in a function. However, if you return an array, list, or object, you can store multiple values in them and achieve essentially the same thing.
 Parameters of a function are pass-by-reference, but augment are pass by value. Any augments, parameters, and variables are stored on a stack by default. If you want to save things in a heap, you must explicitly code that.
+
+## Scope
+Variables declaired outside a code block (code that is surrounded by curly brackets) can be accessed within the code block. Often times they will need to be referenced in the parameters of a code block though. However, a variable declaied within a code block is local to that block and cannot be referenced outside of it unless it is returned in some fashion. This is the case for both functions and loops, so it is important to note.
 
 ### Side Effects
 Side effects are possible in C++. Oftentimes these communication errors are caused by accidentally modifying a global variable. In general, it’s good practice to reduce how many global variables you have in your code anyways. In general, if a side effect is happening, it’s always good practice to use a debugger.
