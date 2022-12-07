@@ -32,6 +32,6 @@ public:
   mary_may.banner(); //outputs "Mary May is 21 years old."
   mary_may.info(); //outputs "Mary May is a Computer Science major."
 
-  mary_may.age += 1; //updates mary_may age
-  mary_may.banner(); //outputs "Mary May is 22 years old."
+  mary.age += 1; //updates mary age
+  mary.banner(); //outputs "Mary is 22 years old."
 }
