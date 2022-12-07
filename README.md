@@ -81,11 +81,17 @@ Parameters of a function are pass-by-reference, but augment are pass by value. A
 Side effects are possible in C++. Oftentimes these communication errors are caused by accidentally modifying a global variable. In general, it’s good practice to reduce how many global variables you have in your code anyways. In general, if a side effect is happening, it’s always good practice to use a debugger.
 
 ## Objects and Structures
-Since C++ is an object oriented program, objects are arguably the most important thing to learn about when it comes to this language. C++ supports both objects and structures. While there is no struct naming convention for either of these, it seems to be the internet's consensus that objects and structures should begin with capitol letters.
+Since C++ is an object oriented program, objects are arguably the most important thing to learn about when it comes to this language. C++ supports both objects and structures. While there is no strict naming convention for either of these, it seems to be the internet's consensus that objects and structures should begin with capitol letters.
 
 ### Create a Class
 To create a class, start by declairing the object as a class and then naming it. Then create open and closed curly brackets followed by a semi colon. All of the information about the class will go inside this. Inside you can assign attributes to the object as well as methods (i.e. functions sepcific to the object).
+https://github.com/MaryMay1923/CS-330/blob/183e442de36cf5bcb23ed4d574d3a1bc9484d1a5/plp5.cpp#L4-L12
 To call an object with this class, state the name of the class where you would normally put the variable type definition. Afterwords you can add that object's class attribute by writing the variable's name dot (.) and then the attribute name. To call the method, write the variable name dot (.) method name, followed by open and closed parenthesis and a semicolon. If the method requires any pareameters, include those in the parenthesis. 
+https://github.com/MaryMay1923/CS-330/blob/183e442de36cf5bcb23ed4d574d3a1bc9484d1a5/plp5.cpp#L23-L26
+A class object's variable can be updated just like normal variables.
+https://github.com/MaryMay1923/CS-330/blob/183e442de36cf5bcb23ed4d574d3a1bc9484d1a5/plp5.cpp#L35-L36
 
 ### Inheritance
 If you’re using inheritance in C++, you will have a base or parent class that is being inherited from, and a derived or child class that inherits from the base class. The child class inherits the attributes and methods the parent class has. To declare a child class, put a colon after the class name and then write the parent class. If you’d like to make a grandchild class (i.e. multiple inheritance), then you would write the child’s class after the colon.
+https://github.com/MaryMay1923/CS-330/blob/183e442de36cf5bcb23ed4d574d3a1bc9484d1a5/plp5.cpp#L14-L21
+https://github.com/MaryMay1923/CS-330/blob/183e442de36cf5bcb23ed4d574d3a1bc9484d1a5/plp5.cpp#L28-L33
