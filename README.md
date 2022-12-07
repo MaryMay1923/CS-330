@@ -50,6 +50,7 @@ C++ uses short-circuiting evaluation when “&&” (and) or “| |” (or) opera
 
 ### Switches
 C++ uses switches, and they are set up in a very similar way to other languages. You may use "break"s to escape the switch or "continue"s to keep evaluating the conditionals.
+https://github.com/MaryMay1923/CS-330/blob/d1b4f9f334d7dd50dbebb8a257434939db63c3a1/plp3.cpp#L27-L40
 
 ## Loops
 C++ has four different types of loops: while, do-while, for, and for-each. Though they are similar, their set up and uses are different and useful in unique applications. Other than the fact that loops are repeated, the code block within a loop is no different than that in a function.
