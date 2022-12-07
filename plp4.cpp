@@ -7,7 +7,6 @@ float inchesToCm(float inches) {
 int main() {
   float ruler = 12;
   cout << inchesToCm(12); //outputs 30.48
-}
   
   int count = 1;
   while (count <= 5) {
