@@ -1,6 +1,7 @@
+#include <iostream>
+
 int main() {
   class Person {
-  // we'll explain 'public' later
   public:
     std::string name;
     int age;
