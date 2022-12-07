@@ -24,5 +24,19 @@ int main()
   string hello = (people >1) ? "Hello everyone!" : "Hey!";
   cout << hello << endl; //outputs "Hey!"
   
-
+  switch (people) {
+  case 0:
+    std::cout << "Where is everyone?\n";
+    break;
+  case 1:
+    std::cout << "Hey!\n";
+    break;
+  case 2:
+    std::cout << "Hi you two!\n";
+    break;
+  default:
+    std::cout << "Hello everyone!\n";
+    break;
+}
+  
 }
