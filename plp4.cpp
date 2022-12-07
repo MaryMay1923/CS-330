@@ -1,6 +1,14 @@
 #include <iostream>
 
+float inchesToCm(float inches) {
+    float cm = inches * 2.54;
+    return cm;
+  }
 int main() {
+  float ruler = 12;
+  cout << inchesToCm(12); //outputs 30.48
+}
+  
   int count = 1;
   while (count <= 5) {
     std::cout << count;
@@ -20,5 +28,11 @@ int main() {
   for (int number : numlist) {
     std::cout << number;
   } // outputs 12345
-
+  
+  float inchesToCm(float inches) {
+    float cm = inches * 2.54;
+    return 
+  }
+  float ruler = 12;
+  cout << inchesToCm(12);
 }
