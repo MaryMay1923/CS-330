@@ -24,26 +24,26 @@ switch | template | this | throw | try | typedef | union | unsigned | virtual | 
 ### Variable Naming Rules
 Obviously you cannot use any of the reserved words as variables in C++. Variable names must start with either a lowercase letter or an underscore, and they cannot include whitespaces or special characters (#!% ect) anywhere within the name. It’s also good to keep in mind that C++ is case sensitive, so the variable names countEggs and counteggs are seen as unique variable names.
 C++ being a strong, static, explicitly typed language means that you will have to declair what type of variable you are creating. Before naming your variable, you must type whichever is accurate: char, double, float, int, long, short, boolean, ect. Additionally, once a variable is declaired as one of these types, it cannot change it's type (unless it was origionally declaired as a mutable variable).
-https://github.com/MaryMay1923/CS-330/blob/dc46279c3372fe5632c6826244495a361ae10aa4/plp1.cpp#L10-L14
+https://github.com/MaryMay1923/CS-330/blob/f61636daf65b6d1682f83ef5459084fbe4b3d022/plp2.cpp#L5-L9
 
 ### Operators
 C++ has a serise of basic operators, similar to other languages, that consist of +, -, \*, /, %, ++, --, ?, <, >, <=, >=, ==. All of these operators work for integers and floats. Strings will work with + to add two strings together, as well as with the comparison operators (<, >, <=, >=, ==) to compare the length of two strings. == Works for boolean data types. Mixed type arithmetic is allowed to a certain extent. Floats and ints can interact, but they will be saved as either a float or int depending on the type declaration of the variable the value is saved in. However, ints and strings cannot interact.
-https://github.com/MaryMay1923/CS-330/blob/dc46279c3372fe5632c6826244495a361ae10aa4/plp1.cpp#L16-L20
+https://github.com/MaryMay1923/CS-330/blob/f61636daf65b6d1682f83ef5459084fbe4b3d022/plp2.cpp#L11-L15
 
 ## Scope
 Variables declaired outside a code block (code that is surrounded by curly brackets) can be accessed within the code block. Often times they will need to be referenced in the parameters of a code block though. However, a variable declaied within a code block is local to that block and cannot be referenced outside of it unless it is returned in some fashion. This is the case for conditional statements, functions loops, and more, so it is important to note.
 
 ## If/Else, Switch, and Logical Operators
 C++, like most languages, use boolean statements to access if/else, switch, and logical operator statements. C++ represents true as 1, and false as 0. This means if you print a true statement, it will print out "1".
-https://github.com/MaryMay1923/CS-330/blob/9b3129bd1b02979491a0cc1cec980c8d9ee0d192/plp2.cpp#L5-L6
+https://github.com/MaryMay1923/CS-330/blob/f61636daf65b6d1682f83ef5459084fbe4b3d022/plp3.cpp#L5-L6
 
 ### If/Else
 C++ utilizes the conditional statements if, else if, and else, as well as the ? operator.
 "if" and "else if" must have a conditional statement surrounded by parenthesis. If that statement is true, then it will run the code block that immediately follows it, and that code block must be surrounded by curly brackets. "else" does not have a statement inside parenthesis, instead it goes straight to the curly brackets to delimit the code block. 
-https://github.com/MaryMay1923/CS-330/blob/9b3129bd1b02979491a0cc1cec980c8d9ee0d192/plp2.cpp#L8-L20
+https://github.com/MaryMay1923/CS-330/blob/f61636daf65b6d1682f83ef5459084fbe4b3d022/plp3.cpp#L8-L20
 It is possible to have any of these code blocks mentioned above not surrounded by curly brackets if and only if the code block is one line long. However, it is generally good practice to have the curly brackets there regardless because it will help to avoid the "dangling else" problem. However, if this issue does arise, C++ will default to having the dangling else be in response to the closest if statement before it.
 C++ also has the semi-unique operator "?". It essentially allows for a simple if/else statement to be on one line instead of many.
-https://github.com/MaryMay1923/CS-330/blob/9b3129bd1b02979491a0cc1cec980c8d9ee0d192/plp2.cpp#L22-L25
+https://github.com/MaryMay1923/CS-330/blob/f61636daf65b6d1682f83ef5459084fbe4b3d022/plp3.cpp#L22-L25
 
 ### Short-Circuiting
 C++ uses short-circuiting evaluation when “&&” (and) or “| |” (or) operators are used in conditional statements. In a statement that includes “&&”, if the left side of the statement is false, then C++ will not check the right hand side and just mark it as false. Similarly, if the left hand side of a “| |” statement is true, then C++ will mark it as true without checking the right hand side.
