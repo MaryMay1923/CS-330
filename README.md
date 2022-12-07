@@ -72,8 +72,8 @@ This is the correct function to use when itterating through lists, arrays, or ot
 https://github.com/MaryMay1923/CS-330/blob/0fa82fa425312777eef4f2a46e2bb19069110076/plp4.cpp#L19-L22
 
 ## Functions
-To declare a function, you must first state what you want your function to return. This can be either integer (int), double, boolean (bool), or nothing (void). Then state the name of the function and follow it by an open and closed parenthesis, leave it empty if the function doesn’t need to take in any values, or type out the parameters. There can be any amount of parameters and they do not have to all be the same datatype. Then the rest of the code is placed in between two curly brackets. 
-Functions in C++ can be called and declared in almost any order so long as the function is declared in or before the main function, and that function is called in main. There are no recursive functions in main either.
+To declare a function, you must first state what you want your function to return. This can be either integer (int), double, boolean (bool), or nothing (void). Then state the name of the function and follow it by an open and closed parenthesis, leave it empty if the function doesn’t need to take in any values, or type out the parameters. There can be any amount of parameters and they do not have to all be the same datatype. Then the rest of the code is placed in between two curly brackets. Functions in C++ must be created before the main function. They can be called at any point in the code after they are initialized.
+https://github.com/MaryMay1923/CS-330/blob/8c99c96a5f6883a6eef6159b2be1afb13980d7de/plp4.cpp#L3-L10
 C++ cannot explicitly return more than one variable in a function. However, if you return an array, list, or object, you can store multiple values in them and achieve essentially the same thing.
 Parameters of a function are pass-by-reference, but augment are pass by value. Any augments, parameters, and variables are stored on a stack by default. If you want to save things in a heap, you must explicitly code that.
 
