@@ -247,8 +247,9 @@ int main() {
   //SWIPING LOOP
   string response = " ";
   bool backup = false;
-  for (Profile prof: online){
-    while (response != "STOP" && backup == false) {
+  while (response != "STOP" && backup == false) {
+    for (Profile prof: online){
+      if(backup == false){
       if (compare(user, prof)){
       prof.view_bio();
       cout << "YES, NO, or STOP?\n";
@@ -278,9 +279,18 @@ int main() {
       else {
         cout << "***simulation ended***\n";
         response = "STOP";
-        backup = true;
+      }
+      if (response == "STOP"){
+          backup = true;
       }
   }
+  if (response == "STOP"){
+          backup = true;
+      }
+  }
+  if (response == "STOP"){
+          backup = true;
+      }
   }
   }
   cout << "Great job! You matched with: \n";
